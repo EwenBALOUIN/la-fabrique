@@ -11,3 +11,8 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .idea
+/desktop.ini
+/package-lock.json
+/public/mix-manifest.json
+/public/css/
+/public/js/
