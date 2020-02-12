@@ -21,8 +21,8 @@
                     <li>La Fabrique .</li>
                 </ul>
                 <ul id="menu">
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">Réalisations</a></li>
+                    <li><a href="#container-about">Présentation</a></li>
+                    <li><a href="#product-container">Réalisations</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -37,8 +37,58 @@
             </div>
         </div>
     </div>
-    <div id="about-container">
 
+    <div id="container-about">
+        <div class="title">
+            <h1 class="pp-med">PRÉSENTATION</h1>
+            <hr>
+        </div>
+        <div id="about-me">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
+            </p>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div class="product" style="background: red">
+            <div class="product-img">
+                <img src="{{ asset('images/clem-onojeghuo-8AiDiLLGmJs-unsplash.jpg') }}" alt="">
+            </div>
+            <div class="product-txt">
+                <h2>Fléchettes</h2>
+            </div>
+        </div>
+        <div class="product" style="background: blue">
+            <div class="product-img">
+                <img src="{{ asset('images/klara-kulikova-DUcVepObkXk-unsplash.jpg') }}" alt="">
+            </div>
+            <div class="product-txt">
+                <h2>Billards</h2>
+            </div>
+        </div>
+        <div class="product" style="background: red">
+            <div class="product-img">
+                <img src="{{ asset('images/kyle-johnson-7dy20Hc1wWE-unsplash.jpg') }}" alt="">
+            </div>
+            <div class="product-txt">
+                <h2>Flipper</h2>
+            </div>
+        </div>
+        <div class="product" style="background: blue">
+            <div class="product-img">
+                <img src="{{ asset('images/kelly-sikkema-ehzHvVk0dAw-unsplash.jpg') }}" alt="">
+            </div>
+            <div class="product-txt">
+                <h2>Baby-foot</h2>
+            </div>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

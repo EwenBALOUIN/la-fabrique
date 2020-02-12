@@ -59,4 +59,50 @@
 
     /* END HOME_PAGE */
 
+    .title{
+        display: block;
+        height: 108px;
+        padding-top: 108px;
+        margin-bottom: 75px;
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .title h1{
+        margin: 0;
+        font-size: 40px;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
+    }
+
+    .title hr{
+        width: 150px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
+    /* ABOUT_PAGE */
+
+    #container-about{
+        height: 600px;
+    }
+
+    #hello{
+        height: 10vh;
+        text-align: center;
+    }
+
+    #hello h2{
+        font-size: 30px;
+    }
+
+    #about-me{
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+    }
+
+    #about-me{
+        font-size: 20px;
+    }
+
+    /* END_ABOUT_PAGE */
 }

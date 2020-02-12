@@ -13,7 +13,7 @@
         width: 100%;
     }
 
-    /* HOME_PAGE */
+    /* HOME_BLOC */
 
     .parallax_top{
         height: 100vh;
@@ -103,11 +103,105 @@
         font-size: 2vw;
         color: #636b6f;
     }
-    /* END_HOME_PAGE */
+    /* END_HOME_BLOC */
 
-    #about-container{
-        width: 100%;
-        height: 80vh;
+    .title{
+        display: block;
+        height: 108px;
+        padding-top: 108px;
+        margin-bottom: 75px;
+        text-align: center;
+        vertical-align: bottom;
     }
+    .title h1{
+        margin: 0;
+        font-size: 40px;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
+    }
+
+    .title hr{
+        width: 150px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
+    /* ABOUT_BLOC */
+
+    #container-about{
+        height: 800px;
+    }
+
+    #hello{
+        height: 10vh;
+        text-align: center;
+    }
+
+    #hello h2{
+        font-size: 30px;
+    }
+
+    #about-me{
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* END_ABOUT_BLOC */
+
+    /* PRODUCT_BLOC */
+
+    #product-container{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        height: 800px;
+    }
+
+    .product{
+        width: 25vw;
+        height: 25vw;
+        position: relative;
+    }
+
+    .product-img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .product-img img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-txt{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transition: 0.25s;
+    }
+    .product-txt:hover{
+        background-color: rgba(0,0,0, 0.35);
+    }
+
+    .product-txt h2{
+        margin-top: 40%;
+        margin-left: 0;
+        margin-right:0;
+        padding: 0;
+        color: #fff;
+    }
+
+    /* END_PRODUCT_BLOC */
+
 }
 
