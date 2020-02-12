@@ -16,8 +16,14 @@
     /* HOME_BLOC */
 
     .parallax_top{
-        height: 100vh;
+        background-image: url('http://localhost/la-fabrique/public/images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
         width: 100%;
+        height: 100vh;
     }
 
     header{
@@ -128,7 +134,7 @@
     /* ABOUT_BLOC */
 
     #container-about{
-        height: 800px;
+        height: 650px;
     }
 
     #hello{
@@ -153,7 +159,6 @@
     /* PRODUCT_BLOC */
 
     #product-container{
-        margin-top: 50px;
         display: flex;
         width: 100%;
         height: 800px;
@@ -190,7 +195,8 @@
         transition: 0.25s;
     }
     .product-txt:hover{
-        background-color: rgba(0,0,0, 0.35);
+        background-color: rgba(0,0,0, 0.15);
+        box-shadow: 3px 6px 4px #000000;
     }
 
     .product-txt h2{
@@ -199,6 +205,7 @@
         margin-right:0;
         padding: 0;
         color: #fff;
+        font-size: 30pt;
     }
 
     /* END_PRODUCT_BLOC */

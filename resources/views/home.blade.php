@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <div class="parallax_top" data-parallax="scroll" data-image-src="{{ asset('images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg') }}">
+    <div class="parallax_top">
         <header>
             <nav>
                 <ul id="header-name">
@@ -44,9 +44,6 @@
             <hr>
         </div>
         <div id="about-me">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
-            </p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
             </p>
