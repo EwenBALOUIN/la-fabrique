@@ -7,9 +7,107 @@
     }
 
     body {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'The Girl Next Door', cursive;
+        //font-family: 'Poppins', sans-serif;
         margin: 0;
         width: 100%;
+    }
+
+    /* HOME_PAGE */
+
+    .parallax_top{
+        height: 100vh;
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+        height: 10vh;
+        color: #fff;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    nav{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #header-name{
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 4vh;
+        padding: 0;
+    }
+
+    #menu{
+        width: 45%;
+        text-align: right;
+        margin-right: 6%;
+        margin-top: 4vh;
+        padding: 0;
+    }
+
+    #header-name li{
+        list-style-type: none;
+    }
+
+    #menu li{
+        display: inline;
+        list-style-type: none;
+        margin-left: 5%;
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: #fff;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    #menu a:hover{
+        color: #ff0000;
+    }
+
+    #container-name{
+        height: 70vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    #block-name{
+        display: inline-block;
+        margin-top: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #container-name ul{
+        padding: 0;
+        text-align: left;
+        list-style-type: none;
+    }
+
+    #firstname{
+        line-height: 0;
+        font-size: 5vw;
+        color: #fff;
+    }
+
+    #lastname{
+        margin-left: 20%;
+        font-size: 5vw;
+        color: #fff;
+    }
+    #slogan{
+        font-size: 2vw;
+        color: #636b6f;
+    }
+    /* END_HOME_PAGE */
+
+    #about-container{
+        width: 100%;
+        height: 80vh;
     }
 }
 
