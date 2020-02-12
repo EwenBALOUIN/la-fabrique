@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('contact', 'ContactController@create');
+Route::post('contact', 'ContactController@store');
     
 
