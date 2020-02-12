@@ -5,8 +5,7 @@
     }
 
     body {
-        font-family: 'The Girl Next Door', cursive;
-        //font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         width: 100%;
     }
@@ -43,6 +42,7 @@
     #container-name ul{
         padding: 0;
         text-align: left;
+        font-family: 'The Girl Next Door', cursive;
         list-style-type: none;
     }
 
@@ -74,6 +74,7 @@
     }
     .title h1{
         margin: 0;
+        font-weight: 400;
         font-size: 40px;
         text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
     }
@@ -84,26 +85,58 @@
         border-radius: 10px;
     }
 
+    /* SERVICES_BLOC */
+
+    #services-container{
+        background-image: url('http://localhost/la-fabrique/public/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //background-attachment: fixed;
+        height: 1100px;
+        width: 100%;
+        color: #fff;
+    }
+
+    #services-container-op{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0, 0.85);
+    }
+
+    #services{
+        width: 100%;
+    }
+
+    .service{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 75%;
+        font-weight: 400;
+        font-size: 40pt;
+    }
+    .service h2{
+        margin: 0;
+        font-weight: 400;
+        font-size: 15pt;
+    }
+
+    .service p{
+        font-weight: 400;
+        font-size: 12pt;
+        color: #cccccc;
+    }
+
+    /* END_SERVICES_BLOC */
+
     /* ABOUT_BLOC */
 
-    #container-about{
-    }
-
-    #hello{
-        height: 10vh;
-        text-align: center;
-    }
-
-    #hello h2{
-        font-size: 30px;
-    }
-
-    #about-me{
+    #about-la-fab{
         width: 70%;
         margin-left: 15%;
         text-align: center;
         font-size: 20px;
-        font-family: 'Poppins', sans-serif;
     }
 
     /* END_ABOUT_BLOC */
@@ -151,6 +184,7 @@
         margin-left: 0;
         margin-right:0;
         padding: 0;
+        font-weight: 400;
         color: #fff;
     }
 

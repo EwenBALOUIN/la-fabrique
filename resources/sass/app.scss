@@ -7,8 +7,7 @@
     }
 
     body {
-        font-family: 'The Girl Next Door', cursive;
-        //font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         width: 100%;
     }
@@ -56,6 +55,7 @@
     }
 
     #header-name li{
+        font-family: 'The Girl Next Door', cursive;
         list-style-type: none;
     }
 
@@ -90,6 +90,7 @@
 
     #container-name ul{
         padding: 0;
+        font-family: 'The Girl Next Door', cursive;
         text-align: left;
         list-style-type: none;
     }
@@ -121,37 +122,84 @@
     }
     .title h1{
         margin: 0;
+        font-weight: 400;
         font-size: 40px;
         text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
     }
 
     .title hr{
-        width: 150px;
+        width: 75px;
         border: 1px solid;
         border-radius: 10px;
     }
 
+    /* SERVICES_BLOC */
+
+    #services-container{
+        background-image: url('http://localhost/la-fabrique/public/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //background-attachment: fixed;
+        width: 100%;
+        height: 650px;
+        color: #fff;
+    }
+
+    #services-container-op{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0, 0.85);
+    }
+
+    #services{
+        display: flex;
+        width: 100%;
+        height: 300px;
+    }
+
+    .service{
+        text-align: center;
+        width: 15%;
+        font-size: 40pt;
+    }
+    .service h2{
+        font-weight: 400;
+        font-size: 15pt;
+    }
+
+    .service p{
+        font-weight: 400;
+        font-size: 12pt;
+        color: #cccccc;
+    }
+
+    .service-left{
+        margin-left: auto;
+    }
+
+    .service-mid{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .service-right{
+        margin-right: auto;
+    }
+
+    /* END_SERVICES_BLOC */
+
     /* ABOUT_BLOC */
 
-    #container-about{
+    #about-container{
         height: 650px;
     }
 
-    #hello{
-        height: 10vh;
-        text-align: center;
-    }
-
-    #hello h2{
-        font-size: 30px;
-    }
-
-    #about-me{
+    #about-la-fab{
         width: 50%;
         margin-left: 25%;
         text-align: center;
         font-size: 20px;
-        font-family: 'Poppins', sans-serif;
     }
 
     /* END_ABOUT_BLOC */
@@ -168,6 +216,10 @@
         width: 25vw;
         height: 25vw;
         position: relative;
+        transition: 0.25s;
+    }
+    .product:hover{
+        filter: grayscale(100%);
     }
 
     .product-img{
@@ -184,6 +236,7 @@
         height: 100%;
         object-fit: cover;
     }
+
 
     .product-txt{
         position: absolute;
@@ -205,6 +258,7 @@
         margin-right:0;
         padding: 0;
         color: #fff;
+        font-weight: 400;
         font-size: 30pt;
     }
 

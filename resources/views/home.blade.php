@@ -9,6 +9,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/phone.css') }}" rel="stylesheet">
 
@@ -38,12 +39,38 @@
         </div>
     </div>
 
-    <div id="container-about">
+    <div id="services-container">
+        <div id="services-container-op">
+            <div class="title">
+                <h1>SERVICES</h1>
+                <hr>
+            </div>
+            <div id="services">
+                <div class="service service-left">
+                    <i class="fas fa-credit-card"></i>
+                    <h2>Vente</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service service-mid">
+                    <i class="fas fa-truck-loading"></i>
+                    <h2>Location</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="service service-right">
+                    <i class="fas fa-tools"></i>
+                    <h2>Maintenance</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-container">
         <div class="title">
-            <h1 class="pp-med">PRÉSENTATION</h1>
+            <h1>PRÉSENTATION</h1>
             <hr>
         </div>
-        <div id="about-me">
+        <div id="about-la-fab">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel pellentesque magna, id consectetur urna. Ut nec semper felis. Nam elementum, sem et mattis pharetra, est ex viverra turpis, aliquet aliquam odio tellus eget nibh. Donec sed scelerisque odio. Lorem.
             </p>
@@ -54,7 +81,7 @@
     </div>
 
     <div id="product-container">
-        <div class="product" style="background: red">
+        <div class="product">
             <div class="product-img">
                 <img src="{{ asset('images/clem-onojeghuo-8AiDiLLGmJs-unsplash.jpg') }}" alt="">
             </div>
@@ -62,7 +89,7 @@
                 <h2>Fléchettes</h2>
             </div>
         </div>
-        <div class="product" style="background: blue">
+        <div class="product">
             <div class="product-img">
                 <img src="{{ asset('images/klara-kulikova-DUcVepObkXk-unsplash.jpg') }}" alt="">
             </div>
@@ -70,7 +97,7 @@
                 <h2>Billards</h2>
             </div>
         </div>
-        <div class="product" style="background: red">
+        <div class="product">
             <div class="product-img">
                 <img src="{{ asset('images/kyle-johnson-7dy20Hc1wWE-unsplash.jpg') }}" alt="">
             </div>
@@ -78,7 +105,7 @@
                 <h2>Flipper</h2>
             </div>
         </div>
-        <div class="product" style="background: blue">
+        <div class="product">
             <div class="product-img">
                 <img src="{{ asset('images/kelly-sikkema-ehzHvVk0dAw-unsplash.jpg') }}" alt="">
             </div>
