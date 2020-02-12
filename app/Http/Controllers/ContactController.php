@@ -17,9 +17,11 @@ class ContactController extends Controller
     {
         $data = request ()->validate([
             'name'=>'required',
-            'email'=>'required|email',
+            'email'=>'required|email|regex:^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}^',
             'message'=>'required'
         ]);
+
+
 
         Mail::to('test@test.com')->send(new ContactMail());
     }
