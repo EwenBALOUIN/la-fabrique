@@ -9,23 +9,29 @@
 	<title>Formulaire</title>
 </head>
 <body>
-<h1>contactez nous !</h1>
+<h1>contactez nous test!</h1>
 <div class="container">
 	<form action"contact" method="POST" class="form">
-	    @csrf
-	    <input type="text" class"form-control @error('name') {{--is-invalid--}} @enderror" name="name" placeholder="Nom" value="{{ old('name') }}">
+		@csrf
+
+		<label for="name">Nom :</label>
+	    <input type="text" class"form-control @error('name') {{--is-invalid--}} @enderror" name="name" value="{{ old('name') }}">
 	        @error('name')
 	            <div class="invalid-feedback">
 	                {{ $errors->first('name')}}
 	            </div>
-	        @enderror
-		<input type="text" class"form-control @error('firstname') {{--is-invalid--}} @enderror" name="firstname" placeholder="Prénom" value="{{ old('firstname') }}">
+			@enderror
+
+		<label for="firstname">Prénom :</label>
+		<input type="text" class"form-control @error('firstname') {{--is-invalid--}} @enderror" name="firstname"  value="{{ old('firstname') }}">
 	        @error('firstname')
 	            <div class="invalid-feedback">
 	                {{ $errors->first('firstname')}}
 	            </div>
 	        @enderror
-	    <input type="email" class="form-control" @error('email') {{--is-invalid--}} @enderror" name="email" placeholder="Votre email..." value="{{ old('email') }}">
+
+		<label for="email">e-mail :</label>
+	    <input type="email" class="form-control" @error('email') {{--is-invalid--}} @enderror" name="email" value="{{ old('email') }}">
 	        @error('email')
 	            <div class="invalid-feedback">
 	                {{ $errors->first('email')}}
@@ -41,7 +47,10 @@
 	                {{ $errors->first('select')}}
 	            </div>
 	        @enderror
-	    <textarea name="message"  cols="30" rows="10" class="form-control @error('message') {{--is-invalid--}} @enderror" placeholder="Votre message..."> {{  old('message') }}</textarea>
+		</select>
+
+		<label for="message">Message :</label>
+		<textarea name="message"  cols="30" rows="10" class="form-control @error('message') {{--is-invalid--}} @enderror" > {{  old('message') }}</textarea>
 	    @error ('message')
 	    <div class="invalid-feedback">
 	        {{ $errors->first('message')}}
