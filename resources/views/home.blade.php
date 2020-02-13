@@ -49,17 +49,17 @@
                 <div class="service service-left">
                     <i class="fas fa-credit-card"></i>
                     <h2>Vente</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    <p>Ventes de jeux sur mersure et façonné à la main.</p>
                 </div>
                 <div class="service service-mid">
                     <i class="fas fa-truck-loading"></i>
                     <h2>Location</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    <p>Locations de fléchettes, flippers, baby-foot, billards.</p>
                 </div>
                 <div class="service service-right">
                     <i class="fas fa-tools"></i>
                     <h2>Maintenance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    <p>Réparations générales, Réparations spécialisées & Restaurations.</p>
                 </div>
             </div>
         </div>
