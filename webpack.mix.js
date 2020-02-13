@@ -15,7 +15,5 @@ mix.js([
     'resources/js/app.js',
     'resources/js/parallax.js'
     ], 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/phone.scss', 'public/css')
-    .sass('resources/sass/contact.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css');
 
