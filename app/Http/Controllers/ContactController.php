@@ -8,12 +8,12 @@ use App\Mail\ContactMail;
 
 class ContactController extends Controller
 {
-    public function create() 
+    public function create()
     {
         return view('contact.create');
     }
 
-    public function store() 
+    public function store()
     {
         $data = request ()->validate([
             'firstname'=>'required',
@@ -22,9 +22,8 @@ class ContactController extends Controller
             'message'=>'required',
             'object'=>'required'
         ]);
+        Mail::to('test@test.com')->send(new ContactMail($data));
 
-        Mail::to('test@test.com')->send(new ContactMail());
-    
         return redirect ('contact')->with('messagesuccess','Votre message à bien été envoyé !');
-   }   
+   }
 }

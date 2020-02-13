@@ -14,20 +14,21 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      *
-     * @return void
+     * @param array $data
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        //
+        return self::build($data);
     }
 
     /**
      * Build the message.
      *
+     * @param $data
      * @return $this
      */
-    public function build()
+    public function build(array $data)
     {
-        return $this->markdown('emails.contact.contact-form');
+        return $this->markdown('emails.contact.contact-form', $data);
     }
 }
