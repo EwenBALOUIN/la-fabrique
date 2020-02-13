@@ -15,7 +15,7 @@
     /* HOME_BLOC */
 
     .parallax_top{
-        background-image: url('http://localhost/la-fabrique/public/images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
+        background-image: url('images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -67,12 +67,13 @@
 
     #menu a{
         text-decoration: none;
-        color: #fff;
+        font-weight: 300;
+        color: #cccccc;
         transition: 0.25s;
         cursor: pointer;
     }
     #menu a:hover{
-        color: #ff0000;
+        color: #fff;
     }
 
     #container-name{
@@ -136,10 +137,10 @@
     /* SERVICES_BLOC */
 
     #services-container{
-        background-image: url('http://localhost/la-fabrique/public/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        //background-image: url('http://localhost/la-fabrique/public/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
+        //background-position: center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
         //background-attachment: fixed;
         width: 100%;
         height: 650px;
@@ -192,14 +193,33 @@
     /* ABOUT_BLOC */
 
     #about-container{
-        height: 650px;
+    }
+    #about-container-flex{
+        display: flex;
+        height: 100%;
+        width: 100%;
     }
 
     #about-la-fab{
-        width: 50%;
-        margin-left: 25%;
+        display: table-cell;
+        width: 40%;
+        margin-left: 10%;
         text-align: center;
+        vertical-align: middle;
         font-size: 20px;
+    }
+
+    #about-img{
+        height: 100%;
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    #about-img img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     /* END_ABOUT_BLOC */
@@ -207,9 +227,14 @@
     /* PRODUCT_BLOC */
 
     #product-container{
-        display: flex;
         width: 100%;
         height: 800px;
+    }
+
+    #product-container-flex{
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
     .product{
@@ -263,6 +288,43 @@
     }
 
     /* END_PRODUCT_BLOC */
+
+    /* FORM_BLOC */
+
+    #contact-container{
+        width: 100%;
+        height: 500px;
+        box-shadow: 1px 3px 2px #000000;
+    }
+
+    /* END_FORM_BLOC */
+
+    /* FOOTER_BLOC */
+
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0,0,0, 0.75);
+        text-align: center;
+        color: #fff;
+    }
+
+    #social-media{
+        display: flex;
+        width: 25%;
+        height: 150px;
+        margin: auto;
+        font-size: 25pt;
+    }
+
+    #social-media a{
+        margin: auto;
+        color: #fff;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
+    }
+
+
+    /* END_FOOTER_BLOC */
 
 }
 

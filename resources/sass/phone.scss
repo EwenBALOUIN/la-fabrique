@@ -13,7 +13,7 @@
     /* HOME_PAGE */
 
     .parallax_top{
-        background-image: url('http://localhost/la-fabrique/public/images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
+        background-image: url('/images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -88,7 +88,7 @@
     /* SERVICES_BLOC */
 
     #services-container{
-        background-image: url('http://localhost/la-fabrique/public/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
+        background-image: url('/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -137,6 +137,10 @@
         margin-left: 15%;
         text-align: center;
         font-size: 20px;
+    }
+
+    #about-img{
+        display: none;
     }
 
     /* END_ABOUT_BLOC */
@@ -189,4 +193,42 @@
     }
 
     /* END_PRODUCT_BLOC */
+
+    /* FORM_BLOC */
+
+    #contact-container{
+        width: 100%;
+        height: 500px;
+    }
+
+    /* END_FORM_BLOC */
+
+    /* FOOTER_BLOC */
+
+    footer{
+        width: 100%;
+        height: 250px;
+        background-color: rgba(0,0,0, 0.75);
+        text-align: center;
+        color: #fff;
+    }
+
+    #social-media{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        font-size: 25pt;
+    }
+
+    #social-media a{
+        margin: auto;
+        color: #fff;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.16);
+    }
+
+
+    /* END_FOOTER_BLOC */
+
+
 }
