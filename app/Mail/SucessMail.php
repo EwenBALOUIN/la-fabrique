@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class SucessMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $data;
@@ -28,6 +28,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->data['object'])->view('emails.contact.contact-form')->with('data', $this->data);
+        return $this->subject('Mail envoyé - La Fabrique')->view('emails.contact.sucess-form')->with('data', $this->data);
     }
 }
