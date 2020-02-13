@@ -1,6 +1,4 @@
-
-
-@media screen and (min-width: 1101px) {
+@media screen and (max-width: 1100px) {
 
     html{
         scroll-behavior: smooth;
@@ -12,68 +10,20 @@
         width: 100%;
     }
 
-    /* HOME_BLOC */
+    /* HOME_PAGE */
 
     .parallax_top{
-        background-image: url('images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
+        background-image: url('/images/nazareno-contreras-p0NvD6umfgY-unsplash.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
         position: relative;
         width: 100%;
         height: 100vh;
     }
 
     header{
-        width: 100%;
-        height: 10vh;
-        color: #fff;
-        text-decoration: none;
-        font-size: 19px;
-    }
-
-    nav{
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
-
-    #header-name{
-        width: 50%;
-        margin-left: 5%;
-        margin-top: 4vh;
-        padding: 0;
-    }
-
-    #menu{
-        width: 45%;
-        text-align: right;
-        margin-right: 6%;
-        margin-top: 4vh;
-        padding: 0;
-    }
-
-    #header-name li{
-        font-family: 'The Girl Next Door', cursive;
-        list-style-type: none;
-    }
-
-    #menu li{
-        display: inline;
-        list-style-type: none;
-        margin-left: 5%;
-    }
-
-    #menu a{
-        text-decoration: none;
-        font-weight: 300;
-        color: #cccccc;
-        transition: 0.25s;
-        cursor: pointer;
-    }
-    #menu a:hover{
-        color: #fff;
+        display: none;
     }
 
     #container-name{
@@ -84,34 +34,35 @@
 
     #block-name{
         display: inline-block;
-        margin-top: 30vh;
+        margin-top: 40vh;
         margin-left: auto;
         margin-right: auto;
     }
 
     #container-name ul{
         padding: 0;
-        font-family: 'The Girl Next Door', cursive;
         text-align: left;
+        font-family: 'The Girl Next Door', cursive;
         list-style-type: none;
     }
 
     #firstname{
         line-height: 0;
-        font-size: 5vw;
+        font-size: 10vw;
         color: #fff;
     }
 
     #lastname{
         margin-left: 20%;
-        font-size: 5vw;
+        font-size: 10vw;
         color: #fff;
     }
     #slogan{
-        font-size: 2vw;
+        font-size: 5vw;
         color: #636b6f;
     }
-    /* END_HOME_BLOC */
+
+    /* END HOME_PAGE */
 
     .title{
         display: block;
@@ -129,7 +80,7 @@
     }
 
     .title hr{
-        width: 75px;
+        width: 150px;
         border: 1px solid;
         border-radius: 10px;
     }
@@ -137,8 +88,12 @@
     /* SERVICES_BLOC */
 
     #services-container{
+        background-image: url('/images/sneaky-elbow-N4FB-VFMNEk-unsplash.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1100px;
         width: 100%;
-        height: 650px;
         color: #fff;
     }
 
@@ -149,17 +104,19 @@
     }
 
     #services{
-        display: flex;
         width: 100%;
-        height: 300px;
     }
 
     .service{
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        width: 15%;
+        width: 75%;
+        font-weight: 400;
         font-size: 40pt;
     }
     .service h2{
+        margin: 0;
         font-weight: 400;
         font-size: 15pt;
     }
@@ -170,51 +127,19 @@
         color: #cccccc;
     }
 
-    .service-left{
-        margin-left: auto;
-    }
-
-    .service-mid{
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    .service-right{
-        margin-right: auto;
-    }
-
     /* END_SERVICES_BLOC */
 
     /* ABOUT_BLOC */
 
-    #about-container{
-    }
-    #about-container-flex{
-        display: flex;
-        height: 100%;
-        width: 100%;
-    }
-
     #about-la-fab{
-        display: table-cell;
-        width: 40%;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 15%;
         text-align: center;
-        vertical-align: middle;
         font-size: 20px;
     }
 
     #about-img{
-        height: 100%;
-        width: 35%;
-        margin-left: 5%;
-    }
-
-    #about-img img{
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        display: none;
     }
 
     /* END_ABOUT_BLOC */
@@ -222,24 +147,14 @@
     /* PRODUCT_BLOC */
 
     #product-container{
+        margin-top: 50px;
         width: 100%;
-        height: 800px;
-    }
-
-    #product-container-flex{
-        display: flex;
-        width: 100%;
-        height: 100%;
     }
 
     .product{
-        width: 25vw;
-        height: 25vw;
+        width: 100vw;
+        height: 100vw;
         position: relative;
-        transition: 0.25s;
-    }
-    .product:hover{
-        filter: grayscale(100%);
     }
 
     .product-img{
@@ -257,7 +172,6 @@
         object-fit: cover;
     }
 
-
     .product-txt{
         position: absolute;
         top: 0;
@@ -265,11 +179,7 @@
         left: 0;
         right: 0;
         text-align: center;
-        transition: 0.25s;
-    }
-    .product-txt:hover{
-        background-color: rgba(0,0,0, 0.15);
-        box-shadow: 3px 6px 4px #000000;
+        background-color: rgba(0,0,0, 0.35);
     }
 
     .product-txt h2{
@@ -277,9 +187,8 @@
         margin-left: 0;
         margin-right:0;
         padding: 0;
-        color: #fff;
         font-weight: 400;
-        font-size: 30pt;
+        color: #fff;
     }
 
     /* END_PRODUCT_BLOC */
@@ -289,7 +198,6 @@
     #contact-container{
         width: 100%;
         height: 500px;
-        box-shadow: 1px 3px 2px #000000;
     }
 
     /* END_FORM_BLOC */
@@ -298,7 +206,7 @@
 
     footer{
         width: 100%;
-        height: 200px;
+        height: 250px;
         background-color: rgba(0,0,0, 0.75);
         text-align: center;
         color: #fff;
@@ -306,8 +214,8 @@
 
     #social-media{
         display: flex;
-        width: 25%;
-        height: 150px;
+        width: 100%;
+        height: 200px;
         margin: auto;
         font-size: 25pt;
     }
@@ -321,5 +229,5 @@
 
     /* END_FOOTER_BLOC */
 
-}
 
+}
