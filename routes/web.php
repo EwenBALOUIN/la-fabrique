@@ -17,4 +17,13 @@ Route::get('/', function () {
 
 Route::get('contact', 'ContactController@create');
 
-Route::post('contact', 'ContactController@store');  
+Route::post('contact', 'ContactController@store');
+Route::get('darts', 'ProductController@darts');
+Route::get('billards', 'ProductController@billards');
+Route::get('pinballs', 'ProductController@pinballs');
+Route::get('soccer-tables', 'ProductController@soccerTables');
+
+
+//Route::get('/{name}', 'ProductController@show');
+
+
