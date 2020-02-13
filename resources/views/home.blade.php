@@ -141,7 +141,7 @@
             <h1>CONTACT</h1>
             <hr>
         </div>
-        @include('welcome')
+{{--        @include('welcome')--}}
     </div>
 
     <footer>
