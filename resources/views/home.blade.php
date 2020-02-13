@@ -74,7 +74,7 @@
         <div id="product-container-flex">
             <div class="product">
                 <div class="product-img">
-                    <img src="{{ asset('images/clem-onojeghuo-8AiDiLLGmJs-unsplash.jpg') }}" alt="">
+                    <img src="{{ asset('images/clem-onojeghuo-8AiDiLLGmJs-unsplash.jpg') }}" alt="Fléchettes">
                 </div>
                 <a href="/darts">
                     <div class="product-txt">
@@ -85,7 +85,7 @@
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="{{ asset('images/klara-kulikova-DUcVepObkXk-unsplash.jpg') }}" alt="">
+                    <img src="{{ asset('images/klara-kulikova-DUcVepObkXk-unsplash.jpg') }}" alt="Billards">
                 </div>
                 <a href="/billards">
                     <div class="product-txt">
@@ -95,7 +95,7 @@
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="{{ asset('images/kyle-johnson-7dy20Hc1wWE-unsplash.jpg') }}" alt="">
+                    <img src="{{ asset('images/kyle-johnson-7dy20Hc1wWE-unsplash.jpg') }}" alt="Flipper">
                 </div>
                 <a href="/pinballs">
                     <div class="product-txt">
@@ -105,7 +105,7 @@
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="{{ asset('images/kelly-sikkema-ehzHvVk0dAw-unsplash.jpg') }}" alt="">
+                    <img src="{{ asset('images/kelly-sikkema-ehzHvVk0dAw-unsplash.jpg') }}" alt="Baby-foot">
                 </div>
                 <a href="/soccer-tables">
                     <div class="product-txt">
@@ -141,7 +141,7 @@
             <h1>CONTACT</h1>
             <hr>
         </div>
-{{--        @include('contact')--}}
+        @include('welcome')
     </div>
 
     <footer>

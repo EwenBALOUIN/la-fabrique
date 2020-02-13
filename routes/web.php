@@ -22,8 +22,3 @@ Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
 Route::get('soccer-tables', 'ProductController@soccerTables');
-
-
-//Route::get('/{name}', 'ProductController@show');
-
-
