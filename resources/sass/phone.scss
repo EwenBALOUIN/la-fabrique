@@ -22,9 +22,47 @@
         height: 100vh;
     }
 
-    header{
+    #home-header{
         display: none;
     }
+
+    header{
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    nav{
+        display: flex;
+        background-color: #000;
+        width: 100%;
+    }
+
+    #header-back{
+        width: 50%;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    #header-back li{
+        list-style-type: none;
+    }
+
+    #header-back a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20pt;
+    }
+
+    #header-name{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
 
     #container-name{
         height: 70vh;
@@ -228,6 +266,32 @@
 
 
     /* END_FOOTER_BLOC */
+
+    /* PRODUCTS_PAGE */
+
+    #galery-container{
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 50px;
+    }
+
+    .row{
+        width: 100%;
+    }
+    .img-container{
+        height: 80vw;
+        width: 80vw;
+        margin-top: 15px;
+    }
+
+    .img-container img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* END_PRODUCTS_PAGE */
 
 
 }
