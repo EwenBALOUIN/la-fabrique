@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="parallax_top">
-        <header>
+        <header id="home-header">
             <nav>
                 <ul id="header-name">
                     <li>La Fabrique .</li>
@@ -76,33 +76,42 @@
                 <div class="product-img">
                     <img src="{{ asset('images/clem-onojeghuo-8AiDiLLGmJs-unsplash.jpg') }}" alt="">
                 </div>
-                <div class="product-txt">
-                    <h2>Fléchettes</h2>
-                </div>
+                <a href="/darts">
+                    <div class="product-txt">
+                        <h2>Fléchettes</h2>
+                    </div>
+                </a>
+
             </div>
             <div class="product">
                 <div class="product-img">
                     <img src="{{ asset('images/klara-kulikova-DUcVepObkXk-unsplash.jpg') }}" alt="">
                 </div>
-                <div class="product-txt">
-                    <h2>Billards</h2>
-                </div>
+                <a href="/billards">
+                    <div class="product-txt">
+                        <h2>Billards</h2>
+                    </div>
+                </a>
             </div>
             <div class="product">
                 <div class="product-img">
                     <img src="{{ asset('images/kyle-johnson-7dy20Hc1wWE-unsplash.jpg') }}" alt="">
                 </div>
-                <div class="product-txt">
-                    <h2>Flipper</h2>
-                </div>
+                <a href="/pinballs">
+                    <div class="product-txt">
+                        <h2>Flipper</h2>
+                    </div>
+                </a>
             </div>
             <div class="product">
                 <div class="product-img">
                     <img src="{{ asset('images/kelly-sikkema-ehzHvVk0dAw-unsplash.jpg') }}" alt="">
                 </div>
-                <div class="product-txt">
-                    <h2>Baby-foot</h2>
-                </div>
+                <a href="/soccer-tables">
+                    <div class="product-txt">
+                        <h2>Baby-foot</h2>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

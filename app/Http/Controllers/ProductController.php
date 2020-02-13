@@ -19,6 +19,6 @@ class ProductController extends Controller
     }
 
     public function soccerTables(){
-        return view('products/soccerTables');
+        return view('products/soccer-tables');
     }
 }
