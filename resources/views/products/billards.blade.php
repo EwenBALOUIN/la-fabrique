@@ -1,6 +1,6 @@
 @extends('layouts.products')
 
-@section('title', 'Page Title')
+@section('title', 'Billards')
 
 @section('content')
     <div class="title">
