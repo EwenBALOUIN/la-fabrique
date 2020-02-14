@@ -50,6 +50,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if (! view()->exists("errors.{$exception->getStatusCode()}")) {
+            return response()->view('errors.default', ['exception' => $exception], 500, $exception->getHeaders());
+        }
         return parent::render($request, $exception);
     }
 }
