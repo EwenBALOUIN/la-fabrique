@@ -28,9 +28,9 @@
     @yield('content')
 <footer>
     <div id="social-media">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/LaFabrique_44-100730794853925/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/LaFabrique_44"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/lafabrique_44/"><i class="fab fa-instagram"></i></a>
     </div>
     <p>© 2023 by La Fabrique .</p>
 </footer>
