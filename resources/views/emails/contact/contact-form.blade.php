@@ -1,4 +1,11 @@
-@component('mail::message')
-#Le client {{ $name }} nous à contacter à l'adresse suivante {{ $email }}
-Voici son message : {{ $message }}
-@endcomponent
+
+<p> Je suis {{ $data['firstname'] }} {{ $data['name'] }}</p>
+  
+<p>{{ $data['message'] }}.</p>
+
+  
+<p>vous pouvez me recontacter à l'adresse suivante :<a href="mailto:{{ $data['email'] }}">{{ $data['email'] }}.</a></p>
+
+<p> Cordialement,</p>
+<p>{{ $data['firstname'] }} {{ $data['name'] }}</p>
+

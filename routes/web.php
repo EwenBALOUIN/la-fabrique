@@ -11,13 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('contact', 'ContactController@create');
-
-Route::post('contact', 'ContactController@store');
+Route::get('/', 'ContactController@create');
+Route::post('/', 'ContactController@store');
 Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
