@@ -17,3 +17,7 @@ Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
 Route::get('soccer-tables', 'ProductController@soccerTables');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
