@@ -11,7 +11,10 @@
 |
 */
 
-Route::Resource('news', 'ProductsController');
+Route::Resources([
+    'prod' => 'ProductsController',
+    'cat' => 'CategoriesController'
+]);
 
 Route::get('/', 'ContactController@create');
 Route::post('/', 'ContactController@store');
