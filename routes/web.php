@@ -11,6 +11,8 @@
 |
 */
 
+Route::Resource('news', 'ProductsController');
+
 Route::get('/', 'ContactController@create');
 Route::post('/', 'ContactController@store');
 Route::get('darts', 'ProductController@darts');
