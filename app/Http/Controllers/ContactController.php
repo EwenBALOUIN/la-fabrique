@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
 use App\Mail\SucessMail;
+use App\Contact;
+use Error;
+use Exception;
 
 class ContactController extends Controller
 {
@@ -14,6 +17,9 @@ class ContactController extends Controller
         return view('home');
     }
 
+    /**
+     * @var App\Contact
+     */
     public function store(Request $request)
     {
         $this->validate(request (), [
@@ -31,6 +37,7 @@ class ContactController extends Controller
             'message' => $request->message,
             'object' => $request->object
         );
+        Contact::create($data);
         return $this->verification($data);
     }
 
