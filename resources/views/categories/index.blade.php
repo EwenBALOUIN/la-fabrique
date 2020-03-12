@@ -13,5 +13,10 @@
                 </a>
             @endforeach
         </div>
+        <div class="crt-prod-container">
+            <a href="{{route('prod.create')}}">
+                <h1>Ajouter un nouveau produit</h1>
+            </a>
+        </div>
     </div>
 @endsection

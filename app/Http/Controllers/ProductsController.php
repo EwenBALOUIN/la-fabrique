@@ -50,9 +50,13 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function show($id)
+    public function show(int $id)
     {
-        $products = DB::table('products')->where('category_id', $id)->get();
+        $products = Product::join('categories', 'products.category_id', '=', 'categories.category_id')
+            ->select('products.*', 'categories.*')
+            ->where('products.category_id', $id)
+            ->get();
+//        $products = DB::table('products')->where('category_id', $id)->get();
         return view('products.show', compact('products'));
     }
 

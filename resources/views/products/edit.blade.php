@@ -1,6 +1,8 @@
 @extends('layouts.products')
 
 @section('content')
+    <a href="{{route('prod.show', $product->category_id)}}">back</a>
+
     <h1>Editer</h1>
 
 
