@@ -15,8 +15,29 @@
 </head>
 <body>
     <div class="parallax_top">
-        <header id="home-header">
+        <header id="home-header">  
             <nav>
+            @if (Auth::check())
+                <ul id="header-name">
+                    <li>La Fabrique .</li>
+                </ul>
+                <ul id="menu">
+                    <li><a href="#services-container">Services</a></li>
+                    <li><a href="#product-container">Créations</a></li>
+                    <li><a href="#about-container">À propos</a></li>
+                    <li><a href="#contact-container">Contact</a></li>
+                    <li><a href="{{ url('test') }}">DashBoard</a></li>
+                    <li><a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();">
+                         {{ __('Logout') }}
+                     </a></li>
+
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                         @csrf
+                     </form>
+                </ul>
+                @else
                 <ul id="header-name">
                     <li>La Fabrique .</li>
                 </ul>
@@ -26,16 +47,11 @@
                     <li><a href="#about-container">À propos</a></li>
                     <li><a href="#contact-container">Contact</a></li>
                     <li><a href="{{ route('login') }}">{{ __('Connexion') }}</a></li>
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                      document.getElementById('logout-form').submit();">
-                         {{ __('Logout') }}
                      </a>
-
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                          @csrf
                      </form>
                 </ul>
+                @endif
             </nav>
         </header>
         <div id="container-name">

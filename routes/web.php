@@ -22,6 +22,7 @@ Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
 Route::get('soccer-tables', 'ProductController@soccerTables');
+<<<<<<< HEAD
 Route::get('email', 'ContactController@index');
 Route::get('/email/{id}/reply', 'ContactController@reply');
 Route::Resources([
@@ -29,6 +30,9 @@ Route::Resources([
 ]);
 Route::post('/email/{id}', 'ContactController@response');
 
+=======
+Route::view('/test', 'test');
+>>>>>>> Gestion nav-bar admin
 
 Auth::routes();
 
