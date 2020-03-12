@@ -26,7 +26,7 @@
                     <li><a href="#product-container">Créations</a></li>
                     <li><a href="#about-container">À propos</a></li>
                     <li><a href="#contact-container">Contact</a></li>
-                    <li><a href="{{ url('test') }}">DashBoard</a></li>
+                    <li><a href="{{ url('dashboard') }}">DashBoard</a></li>
                     <li><a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
