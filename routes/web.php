@@ -29,3 +29,7 @@ Route::Resources([
 ]);
 Route::post('/email/{id}', 'ContactController@response');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
