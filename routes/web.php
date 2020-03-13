@@ -29,3 +29,15 @@ Route::Resources([
 ]);
 Route::post('/email/{id}', 'ContactController@response');
 
+Route::view('/dashboard', 'dashboard');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard', function () {
+    if (Auth::guest()) {
+        //is a guest so redirect
+        return redirect('/');
+       }
+});
