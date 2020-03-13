@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use App\Role;
 use App\User;
+use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class MainsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,8 +13,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::truncate();
+//        TODO: CREATE 'RoleFactory' and use it
+        Role::create(['name' => 'admin']);
+        Role::create(['name' => 'author']);
+        Role::create(['name' => 'user']);
 
+//        TODO: Modify UserFactory to create these users
         $adminRole = Role::where('name','admin') ->first();
         $authorRole = Role::where('name','author') ->first();
         $userRole = Role::where('name','user') ->first();
@@ -40,5 +44,13 @@ class UsersTableSeeder extends Seeder
         $admin->roles()->attach($adminRole);
         $author->roles()->attach($authorRole);
         $user->roles()->attach($userRole);
+
+        factory(App\Category::class, 4)->create()
+            ->each(function ($category) {
+                factory(App\Product::class, 8)->create();
+            });
+
+        factory(App\Contact::class, 10)->create();
+
     }
 }

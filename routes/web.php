@@ -39,5 +39,5 @@ Route::get('/dashboard', function () {
     if (Auth::guest()) {
         //is a guest so redirect
         return redirect('/');
-       }
+       }else return view('dashboard');
 });

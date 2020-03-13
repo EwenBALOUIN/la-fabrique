@@ -13,6 +13,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+@if (Auth::check())
+    @include('admin.header_admin')
+@else
+@endif
 <header id="product-header">
     <nav>
         <ul id="header-back">
