@@ -33,3 +33,7 @@ Ce site a pour but de présenter La Fabrique. Il permet également aux utilisate
     - `npm run dev`
     - `php artisan migrate`
     - `php artisan db:seed --class=MainsTableSeeder`
+- Pour se connecter au backend aller à 'localhost/login' et utiliser les identifiants suivants:
+    - Admin: admin@admin.com admin
+    - Author: author@author.com author
+    - User: user@user.com user
