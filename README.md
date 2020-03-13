@@ -28,3 +28,8 @@ Ce site a pour but de présenter La Fabrique. Il permet également aux utilisate
 - Récupérer le fichier `images.zip` sur le [drive](https://drive.google.com/file/d/1cUcImeq2JsrDcP0N5iuMPnbE6pZ6-MPw/view), décompresser-le et déposer-le dans le dossier `public`.
 - Puis utiliser la commande à la racine du projet : `php artisan key:generate`
 - Ensuite, télécharger toutes les dépendances avec les commandes `composer install` et `npm install`
+- Puis exécutez les commandes qui suivent dans l'ordre suivant:
+    - `composer dump-autoload`
+    - `npm run dev`
+    - `php artisan migrate`
+    - `php artisan db:seed --class=MainsTableSeeder`
