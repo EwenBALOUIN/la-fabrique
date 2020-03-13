@@ -35,13 +35,52 @@ class ProductsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
+        $this->validate($request, [
+            'product_name'=>'required',
+            'product_description'=>'required',
+            'product_prize'=>'required',
+            'category_id'=>'required',
+            'product_image' => 'image|nullable'
+        ]);
+
+        // Handle File Upload
+        if($request->hasFile('product_image')) {
+
+            // Get filename with extension
+            $filenameWithExt = $request->file('product_image')->getClientOriginalName();
+
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get just ext
+            $extension = $request->file('product_image')->getClientOriginalExtension();
+
+            //Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+
+            // Upload Image
+            $path = $request->file('product_image')->storeAs('public/products_images', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'image.png';
+        }
+
+        // create Product
+        $product = new Product();
+        $product->product_name = $request->input('product_name');
+        $product->product_description = $request->input('product_description');
+        $product->product_prize = $request->input('product_prize');
+        $product->category_id = $request->input('category_id');
+        $product->product_image = $fileNameToStore;
+        $product->save();
+
         return redirect(route('prod.edit', $product));
+
     }
 
     /**

@@ -432,6 +432,7 @@
     }
 
     .product_container{
+        display: flex;
         width: 90%;
         transition: 0.5s;
         margin-left: 2%;
@@ -444,11 +445,23 @@
         transform: scale(1.025);
     }
 
-    .product_container a{
+    .product_img{
+        width: 10%;
+    }
+    .product_img img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .product_info{
+        width: 90%;
+    }
+
+    .product_info a{
         text-decoration: none;
     }
 
-    .product_container h2{
+    .product_info h2{
         margin: 0;
         padding: 0;
     }
