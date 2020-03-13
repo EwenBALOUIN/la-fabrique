@@ -29,7 +29,7 @@ Route::Resources([
 ]);
 Route::post('/email/{id}', 'ContactController@response');
 
-Route::view('/test', 'test');
+Route::view('/dashboard', 'dashboard');
 
 Auth::routes();
 
