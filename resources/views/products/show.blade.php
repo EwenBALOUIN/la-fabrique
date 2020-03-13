@@ -13,7 +13,16 @@
                     <div class="product_info">
                         <h2>{{$product->category_id}}.{{ $product->product_name }}</h2>
                         <p>{{ $product->product_description }}</p>
-                        <p><a href="{{ route('prod.edit', [$product->product_id]) }}">Editer</a></p>
+                        <ul>
+                            <li>
+                                <a href="{{ route('prod.edit', [$product->product_id]) }}" class="btn btn-primary">Editer</a>
+                            </li>
+                            <li>
+                                {{Form::open(['method'  => 'DELETE', 'route' => ['prod.destroy', $product->product_id]])}}
+                                <button class="btn btn-primary">Supprimer</button>
+                                {{Form::close()}}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             @endforeach

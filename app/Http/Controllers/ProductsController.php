@@ -123,7 +123,6 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-//        dd($test['product_description']);
         $product = Product::where('product_id', '=', $id)->firstOrFail()->update($request->all());
         return redirect(route('prod.edit', [$id]));
     }
@@ -132,10 +131,11 @@ class ProductsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function destroy($id)
     {
-        //
+        $product = Product::where('product_id', '=', $id)->firstOrFail()->delete();
+        return redirect(route('cat.index', [$id]));
     }
 }
