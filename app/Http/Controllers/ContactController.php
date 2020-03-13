@@ -9,17 +9,18 @@ use App\Mail\SucessMail;
 use App\Contact;
 use Error;
 use Exception;
+/**
+ * @var App\Contact
+ */
 
 class ContactController extends Controller
 {
+
     public function create()
     {
         return view('home');
     }
 
-    /**
-     * @var App\Contact
-     */
     public function store(Request $request)
     {
         $this->validate(request (), [
@@ -50,5 +51,34 @@ class ContactController extends Controller
         }
         Mail::to($data['email'])->send(new SucessMail($data));
         return redirect ('/#contact-container')->with('messagesuccess','Votre message a bien été envoyé !');
+    }
+
+    public function index(){
+        $contacts = Contact::get();
+        return view('admin.email_list', compact('contacts'));
+    }
+
+    public function reply(int $id){
+        $contact = Contact::where('contact_id', $id)->firstOrFail();
+        return view('admin.email', compact('contact'));
+    }
+
+    public function delete(int $id){
+        Contact::where('contact_id', '=', $id)->firstOrFail()->delete();
+        return $this->index();
+    }
+
+    public function response(Request $request, int $id)
+    {
+        $contact = Contact::where('contact_id', $id)->firstOrFail();
+        dd($contact);
+        $this->validate(request (), [
+            'response'=>'required'
+        ]);
+        $data = array(
+            'response' => $request->response
+        );
+        Contact::update($data);
+        return $this->verification($data);
     }
 }

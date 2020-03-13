@@ -22,3 +22,10 @@ Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
 Route::get('soccer-tables', 'ProductController@soccerTables');
+Route::get('email', 'ContactController@index');
+Route::get('/email/{id}/reply', 'ContactController@reply');
+Route::Resources([
+    'email' => 'ContactController',
+]);
+Route::post('/email/{id}', 'ContactController@response');
+
