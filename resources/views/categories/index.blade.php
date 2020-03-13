@@ -8,7 +8,6 @@
                 <a href="{{route('prod.show', $category->category_id)}}">
                     <div class="category_container">
                         <h2>{{ $category->category_name }}</h2>
-                        {{--                <p><a href="{{ route('cat.edit', $category->category_id) }}">Editer</a></p>--}}
                     </div>
                 </a>
             @endforeach

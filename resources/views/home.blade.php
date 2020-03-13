@@ -15,31 +15,10 @@
 </head>
 <body>
     @if (Auth::check())
-    <div class="header-admin">
-        <nav>
-                <ul id="menu-admin">
-                    <li>
-                        <div class="dashboard">
-                            <i class="fas fa-edit"></i>
-                            <a href="{{ url('dashboard') }}">DashBoard</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="deco" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                      document.getElementById('logout-form').submit();">
-                         {{ __('Logout') }}
-                     </a></li>
+        @include('admin.header_admin')
+    @else
+    @endif
 
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                         @csrf
-                     </form>
-                </ul>
-    </div>
-                @else   
-                @endif
-            </nav>
-    
     <div class="parallax_top">
         <header id="home-header">
             <nav>
