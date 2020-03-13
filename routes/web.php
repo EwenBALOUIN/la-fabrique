@@ -11,6 +11,11 @@
 |
 */
 
+Route::Resources([
+    'prod' => 'ProductsController',
+    'cat' => 'CategoriesController'
+]);
+
 Route::get('/', 'ContactController@create');
 Route::post('/', 'ContactController@store');
 Route::get('darts', 'ProductController@darts');
