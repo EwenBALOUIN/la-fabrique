@@ -11,9 +11,35 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/874b363ce5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    @if (Auth::check())
+    <div class="header-admin">
+        <nav>
+                <ul id="menu-admin">
+                    <li>
+                        <div class="dashboard">
+                            <i class="fas fa-edit"></i>
+                            <a href="{{ url('dashboard') }}">DashBoard</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="deco" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();">
+                         {{ __('Logout') }}
+                     </a></li>
+
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                         @csrf
+                     </form>
+                </ul>
+    </div>
+                @else   
+                @endif
+            </nav>
+    
     <div class="parallax_top">
         <header id="home-header">
             <nav>
@@ -26,16 +52,6 @@
                     <li><a href="#product-container">Créations</a></li>
                     <li><a href="#about-container">À propos</a></li>
                     <li><a href="#contact-container">Contact</a></li>
-                    <li><a href="{{ url('dashboard') }}">DashBoard</a></li>
-                    <li><a href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                      document.getElementById('logout-form').submit();">
-                         {{ __('Logout') }}
-                     </a></li>
-
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                         @csrf
-                     </form>
                 </ul>
                 @else
                 <ul id="header-name">
@@ -46,7 +62,6 @@
                     <li><a href="#product-container">Créations</a></li>
                     <li><a href="#about-container">À propos</a></li>
                     <li><a href="#contact-container">Contact</a></li>
-                    <li><a href="{{ route('login') }}">{{ __('Connexion') }}</a></li>
                      </a>
                          @csrf
                      </form>
