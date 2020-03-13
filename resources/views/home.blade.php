@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="parallax_top">
-        <header id="home-header">  
+        <header id="home-header">
             <nav>
             @if (Auth::check())
                 <ul id="header-name">
