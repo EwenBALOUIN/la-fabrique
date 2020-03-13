@@ -12,5 +12,6 @@ $factory->define(Contact::class, function (Faker $faker) {
         'contact_email' => $faker->email,
         'contact_message' => $faker->text,
         'contact_object' => $faker->title,
+        'contact_response' => $faker->text,
     ];
 });
