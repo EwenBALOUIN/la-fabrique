@@ -25,7 +25,8 @@ Ce site a pour but de présenter La Fabrique. Il permet également aux utilisate
 
 - Cloner le repo Github avec la commande : `git clone https://github.com/EwenBALOUIN/la-fabrique.git` ou `git@github.com:EwenBALOUIN/la-fabrique.git`
 - Récupérer le fichier `.env` sur le [drive](https://drive.google.com/file/d/1cUcImeq2JsrDcP0N5iuMPnbE6pZ6-MPw/view) et déposer-le à la racine du projet.
-- Récupérer le fichier `images.zip` sur le [drive](https://drive.google.com/file/d/1cUcImeq2JsrDcP0N5iuMPnbE6pZ6-MPw/view), décompresser-le et déposer-le dans le dossier `public`.
+- Exécuter la commande suivante: `php artisan storage:link`
+- Récupérer le fichier `images.zip` sur le [drive](https://drive.google.com/file/d/1cUcImeq2JsrDcP0N5iuMPnbE6pZ6-MPw/view), décompresser-le et déposer-le dans le dossier `public/storage/`.
 - Puis utiliser la commande à la racine du projet : `php artisan key:generate`
 - Ensuite, télécharger toutes les dépendances avec les commandes `composer install` et `npm install`
 - Puis exécutez les commandes qui suivent dans l'ordre suivant:
