@@ -10,16 +10,16 @@
         width: 100%;
     }
 
-    .form{
+    .formContact{
         display: grid;
         width: 70%;
         margin: auto;
     }
 
-    form label{
+    .formContact .labelContact{
         font-family: poppins, sans-serif;
     }
-    input{
+    .inputContact{
         margin: 3% 0 3% 0;
         padding: 10px 0 10px 0;
         background-color: transparent;
@@ -35,7 +35,7 @@
         transition: all 0.3s ease-out;
     }
 
-    textarea{
+    .textareaContact{
         margin: 3% 0 3% 0;
         padding: 10px 0 10px 0;
         background-color: transparent;
@@ -52,11 +52,11 @@
         resize: none;
     }
 
-    input:focus, textarea:focus{
+    .inputContact:focus, .textareaContact:focus{
         outline: none;
     }
 
-    label {
+    .labelContact {
         display: block;
         margin: 0;
         font-weight: 400;
@@ -68,7 +68,7 @@
 
     }
 
-    select {
+    .selectContact {
         width: 20em;
         margin-top: 3em ;
         font-family: pfs-bold;
@@ -84,111 +84,111 @@
 
     }
 
-    select .option:not(.active) {
+    .selectContact .option:not(.active) {
         display: none;
         opacity: 0;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
-    select.visible {
+    .selectContact.visible {
         -webkit-animation: bounce 1s;
         animation: bounce 1s;
         width: 24em;
     }
 
-    select.visible:before, select.visible:after {
+    .selectContact.visible:before, .selectContact.visible:after {
         border-color: #fff;
     }
 
-    select.visible:before {
+    .selectContact.visible:before {
         opacity: 0;
     }
 
-    select.visible:after {
+    .selectContact.visible:after {
         opacity: 1;
     }
 
-    select.visible .option {
+    .selectContact.visible .option {
         color: #fff;
         display: block;
     }
-    select.opacity .option {
+    .selectContact.opacity .option {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         opacity: 1;
     }
-    select.opacity .option:nth-child(0) {
+    .selectContact.opacity .option:nth-child(0) {
         -webkit-transition: opacity 0.5s 0s, -webkit-transform 0.5s 0s;
         transition: opacity 0.5s 0s, -webkit-transform 0.5s 0s;
         transition: opacity 0.5s 0s, transform 0.5s 0s;
         transition: opacity 0.5s 0s, transform 0.5s 0s, -webkit-transform 0.5s 0s;
     }
-    select.opacity .option:nth-child(1) {
+    .selectContact.opacity .option:nth-child(1) {
         -webkit-transition: opacity 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
         transition: opacity 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
         transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
         transition: opacity 0.5s 0.1s, transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
     }
-    select.opacity .option:nth-child(2) {
+    .selectContact.opacity .option:nth-child(2) {
         -webkit-transition: opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
         transition: opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
         transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
         transition: opacity 0.5s 0.2s, transform 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
     }
-    select.opacity .option:nth-child(3) {
+    .selectContact.opacity .option:nth-child(3) {
         -webkit-transition: opacity 0.5s 0.3s, -webkit-transform 0.5s 0.3s;
         transition: opacity 0.5s 0.3s, -webkit-transform 0.5s 0.3s;
         transition: opacity 0.5s 0.3s, transform 0.5s 0.3s;
         transition: opacity 0.5s 0.3s, transform 0.5s 0.3s, -webkit-transform 0.5s 0.3s;
     }
-    select.opacity .option:nth-child(4) {
+    .selectContact.opacity .option:nth-child(4) {
         -webkit-transition: opacity 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
         transition: opacity 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
         transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;
         transition: opacity 0.5s 0.4s, transform 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
     }
-    select.opacity .option:nth-child(5) {
+    .selectContact.opacity .option:nth-child(5) {
         -webkit-transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
         transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
         transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
         transition: opacity 0.5s 0.5s, transform 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
     }
-    select.opacity .option:nth-child(6) {
+    .selectContact.opacity .option:nth-child(6) {
         -webkit-transition: opacity 0.5s 0.6s, -webkit-transform 0.5s 0.6s;
         transition: opacity 0.5s 0.6s, -webkit-transform 0.5s 0.6s;
         transition: opacity 0.5s 0.6s, transform 0.5s 0.6s;
         transition: opacity 0.5s 0.6s, transform 0.5s 0.6s, -webkit-transform 0.5s 0.6s;
     }
-    select.opacity .option:nth-child(7) {
+    .selectContact.opacity .option:nth-child(7) {
         -webkit-transition: opacity 0.5s 0.7s, -webkit-transform 0.5s 0.7s;
         transition: opacity 0.5s 0.7s, -webkit-transform 0.5s 0.7s;
         transition: opacity 0.5s 0.7s, transform 0.5s 0.7s;
         transition: opacity 0.5s 0.7s, transform 0.5s 0.7s, -webkit-transform 0.5s 0.7s;
     }
-    select.opacity .option:nth-child(8) {
+    .selectContact.opacity .option:nth-child(8) {
         -webkit-transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
         transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
         transition: opacity 0.5s 0.8s, transform 0.5s 0.8s;
         transition: opacity 0.5s 0.8s, transform 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
     }
-    select.opacity .option:nth-child(9) {
+    .selectContact.opacity .option:nth-child(9) {
         -webkit-transition: opacity 0.5s 0.9s, -webkit-transform 0.5s 0.9s;
         transition: opacity 0.5s 0.9s, -webkit-transform 0.5s 0.9s;
         transition: opacity 0.5s 0.9s, transform 0.5s 0.9s;
         transition: opacity 0.5s 0.9s, transform 0.5s 0.9s, -webkit-transform 0.5s 0.9s;
     }
-    select.withBG .option {
+    .selectContact.withBG .option {
         -webkit-transition: background-color 0.1s;
         transition: background-color 0.1s;
     }
-    select.withBG .option:not(.placeholder):hover {
+    .selectContact.withBG .option:not(.placeholder):hover {
         background-color: #5aafee;
     }
-    select.withBG .option:not(.placeholder).active {
+    .selectContact.withBG .option:not(.placeholder).active {
         background-color: #5aafee;
     }
-    select:after, select:before {
+    .selectContact:after, .selectContact:before {
         content: "";
         position: absolute;
         top: 1.5em;
@@ -203,18 +203,18 @@
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s;
     }
-    select:before {
+    .selectContact:before {
         border-left: none;
         border-top: none;
         top: 1.2em;
     }
-    select:after {
+    .selectContact:after {
         border-right: none;
         border-bottom: none;
         opacity: 0;
     }
 
-    .btn{
+    .btnContact{
         margin-top: 50px;
         padding: 15px;
         background-color: #485761;
@@ -223,9 +223,12 @@
         cursor: pointer;
     }
 
-    .btn:hover{
+    .btnContact:hover{
         background-color: #18b1c5;
         transition: ease 0.5s;
         color: white;
     }
 
+    .alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}
+    .alert-success{color:#155724;background-color:#d4edda;border-color:#c3e6cb}
+    .alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}

@@ -6,3 +6,25 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+@media screen and (min-width: 1101px) {
+    @import "computer";
+    @import "contact/contact-computer";
+    @import "contact/contact-modal";
+
+}
+
+
+@media screen and (max-width: 1100px) {
+    @import "phone";
+    @import "contact/contact-phone";
+    @import "contact/contact-modal";
+
+}

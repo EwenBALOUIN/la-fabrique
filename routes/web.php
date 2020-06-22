@@ -11,13 +11,33 @@
 |
 */
 
+Route::Resources([
+    'prod' => 'ProductsController',
+    'cat' => 'CategoriesController'
+]);
+
 Route::get('/', 'ContactController@create');
 Route::post('/', 'ContactController@store');
 Route::get('darts', 'ProductController@darts');
 Route::get('billards', 'ProductController@billards');
 Route::get('pinballs', 'ProductController@pinballs');
 Route::get('soccer-tables', 'ProductController@soccerTables');
+Route::get('email', 'ContactController@index');
+Route::get('/email/{id}/reply', 'ContactController@reply');
+Route::Resources([
+    'email' => 'ContactController',
+]);
+Route::post('/email/{id}', 'ContactController@response');
+
+Route::view('/dashboard', 'dashboard');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard', function () {
+    if (Auth::guest()) {
+        //is a guest so redirect
+        return redirect('/');
+       }
+});
